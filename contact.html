@@ -50,7 +50,9 @@
             <h2>☎ 電話</h2>
             <p class="muted">「〇〇を査定したい」とお伝えください。ご案内します。</p>
             <a class="btn success" href="tel:0312345678">☎ 電話で相談</a>
-            <p class="muted" style="margin-top:10px;font-size:13px;">電話受付：月〜土 9:30〜16:30（17:00閉店）／日曜 9:30〜14:30（15:00閉店）</p>
+            <p class="muted" style="margin-top:10px;font-size:13px;">
+              電話受付時間：月〜土 9:30〜16:30（17:00閉店）／日曜 9:30〜14:30（15:00閉店）
+            </p>
 
             <div class="pill" style="margin-top:12px">
               <strong>お電話の前にご確認ください</strong>
@@ -67,15 +69,7 @@
           <div class="card" id="form">
             <h2>お問い合わせフォーム（24時間受付）</h2>
 
-            <!--
-              Formspree用
-              1) FORM_ID を自分のフォームIDに変更
-              2) _next を公開後の thanks.html のURLに変更
-            -->
-            <form action="https://formspree.io/f/FORM_ID" method="POST">
-              <input type="hidden" name="_subject" value="【金財天】お問い合わせ">
-              <input type="hidden" name="_next" value="https://あなたのGitHubPagesのURL/thanks.html">
-
+            <form>
               <div style="margin-top:10px">
                 <label for="name">お名前</label>
                 <input id="name" name="name" type="text" autocomplete="name" required />
@@ -131,11 +125,11 @@
               </div>
 
               <div style="margin-top:12px">
-                <button class="btn primary" type="submit">送信する</button>
+                <button class="btn primary" type="button">送信する</button>
               </div>
 
               <p class="muted" style="margin:10px 0 0;font-size:12px;">
-                ※送信にはインターネット接続が必要です。公開後のURLで動作確認してください。
+                ※現在は確認用ページのため、フォーム送信は無効です。
               </p>
             </form>
           </div>
