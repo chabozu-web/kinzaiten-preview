@@ -504,3 +504,30 @@ footer{
     position:static;
   }
 }
+
+.mobile-quicklinks{
+  display:none;
+}
+
+@media (max-width: 860px){
+  .mobile-quicklinks{
+    display:flex;
+    gap:10px;
+    padding:10px 16px;
+    border-bottom:1px solid var(--line);
+    background:#fff;
+  }
+
+  .mobile-quicklinks a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    padding:10px 12px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:#fff;
+    color:var(--text);
+    font-size:14px;
+    font-weight:700;
+  }
+}
