@@ -504,7 +504,7 @@ footer{
     position:static;
   }
 }
-
+/* スマホ用の簡易リンク（PCでは非表示） */
 .mobile-quicklinks{
   display:none;
 }
